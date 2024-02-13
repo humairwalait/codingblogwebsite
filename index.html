@@ -1,0 +1,619 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="Website Icon" type="png" href="download.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>CodeJourney- Code. Connect. Conquer!</title>
+
+</head>
+
+<body>
+
+
+<!-- Navbar -->
+<!-- fixed-top  -->
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" >
+    <div class="container-fluid">
+      
+      <div class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/css-3.png" alt="Logo" width="30" height="26" class="d-inline-block align-text-top"><b>CodeJourney </b>
+            
+          </a>
+          
+        </div>
+      </div>
+     
+        <ul class="navbar-nav ml-auto"></ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#About">About Us</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#Event1">Upcoming Milestones</a></li>
+              <li><a class="dropdown-item" href="#Event2">Upcoming Coding Challenges</a></li>
+              <!-- <li><a class="dropdown-item" href="#">News and reports</a></li> -->
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+      
+         
+         
+
+        </ul>
+        <div class="mx-2">
+            <button type="button" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Sign-upModal">Sign-up</button>
+          </div>
+      
+      </div>
+    </div>
+  </nav>
+
+
+
+<!--Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="LoginModalLabel">Login to CodeJourney Club</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="login-form my-2">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" name="Email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="login-form my-2">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="Password" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="login-form form-check my-2 ">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1" required="" >Check me out </label>
+          </div>
+          <button type="button" class="btn btn-primary">Login</button><br>
+          <span class="form-text text text-muted">Not a Member?</span>
+          <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Sign-upModal">Sign-Up</button>
+
+        </form>
+      </div>
+      <div class="modal-footer my-2 ">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sign-up Modal -->
+<div class="modal fade " id="Sign-upModal" tabindex="-1" aria-labelledby="Sign-upModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Sign-upModalLabel">Get an Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-groupmy-2">
+            <label for="exampleInputEmail1">Full Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
+          </div>
+          <div class="form-group my-2">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group my-2">
+            <label for="cexampleInputPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1" placeholder="Password">
+          </div>
+
+
+          <button type="button" class="btn btn-primary my-2 ">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Home"></div>
+  <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade " data-bs-ride="carousel"data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button  style="border-radius: 50%; width: 12px ;height: 12px;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button style="border-radius: 50%; width: 12px ;height: 12px;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button style="border-radius: 50%; width: 12px ;height: 12px;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+
+      <button style="border-radius: 50%; width: 12px ;height: 12px;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button style="border-radius: 50%; width: 12px ;height: 12px;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/img4.jpg"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to CodeJourney Club</h2>
+          <p>Technology,News And Trends.</p>
+          <button type="button" class="btn btn-primary">Technology</button>
+          <button type="button" class="btn btn-success">News</button>
+          <button type="button" class="btn btn-danger">Tech Fun</button>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/hehe.jpg"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Our Moto</h2>
+          <p>"Code. Connect. Conquer."</p>
+          <button type="button" class="btn btn-primary">Technology</button>
+          <button type="button" class="btn btn-success">News</button>
+          <button type="button" class="btn btn-danger">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/f.jpg"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+
+          <h5>Award Winning Blog</h5>
+          <p>Global Winner 2023.</p>
+          <button type="button" class="btn btn-primary">Technology</button>
+          <button type="button" class="btn btn-success">News</button>
+          <button type="button" class="btn btn-danger">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/front5.jpg"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+
+          <h5>Blogs For Everyone</h5>
+          <p>Internationally Recognized.</p>
+          <button type="button" class="btn btn-primary">Technology</button>
+          <button type="button" class="btn btn-success">News</button>
+          <button type="button" class="btn btn-danger">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/fff.jpg"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+
+          <h5>Join Us</h5>
+          <p>Team of 200+.</p>
+          <button type="button" class="btn btn-primary">Technology</button>
+          <button type="button" class="btn btn-success">News</button>
+          <button type="button" class="btn btn-danger">Tech Fun</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev"data-bs-interval="3000">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next"data-bs-interval="3000">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ 
+        
+        
+  <!-- abouttttt -->
+  <div class="container my-4 ">
+    <br><br><br>
+    <div class="row featurette d-flex justify-content-center align-items-center ">
+        
+        <h2 id="About">About Us</h2>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">It all started with CodeJourney Club idea. <span class="text-muted">It’ll blow your
+                    mind.</span></h2>
+            <p class="lead">We are a passionate team of tech enthusiasts dedicated to sharing our knowledge and insights in the world of coding</p>
+        </div>
+        <div class="col-md-5">
+            <img class="img-fluid" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                height="400" src="images/9.png">
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row featurette d-flex justify-content-center align-items-center ">
+        <div class="col-md-7 order-md-2 ">
+            <h2 class="featurette-heading">We started CodeJourney Club in 2001. <span class="text-muted">It’ll blow your
+                    mind.</span></h2>
+            <p class="lead"> Join us on this exciting journey as we unravel the wonders of coding and help you become a confident and skilled programmer. Let's dive into the world of code together!</p>
+        </div>
+        <div class="col-md-5  ">
+            <img class="img-fluid" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                height="400" src="images/10.jpeg">
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row featurette d-flex justify-content-center align-items-center ">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Easy to Learn with CodeJourney Club. <span class="text-muted">It’ll blow your
+                    mind.</span></h2>
+            <p class="lead">Learn to Earn with Us.So what are you waiting for....JOIN</p>
+        </div>
+        <div class="col-md-5">
+            <img class="img-fluid" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400px"
+                height="300px" src="images/code.jpg">
+
+        </div>
+    </div>
+</div>
+
+
+
+  <div class="container mt-4 mb-4">
+    <h2 id="Event1">Upcoming Milestones</h2>
+
+<!-- ----------------EVENT CARDS-------------------- -->
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/carddd.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> "Code Challenge Kickoff"</h5>
+        <p class="card-text"> Join us for an exciting coding challenge starting on December 15th, 2023.
+          
+         </p>
+        <a href="#" class="btn btn-primary">Apply Now</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 1 min ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/2img.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">"Latest Webinar Series Launch"</h5>
+        <p class="card-text">Get ready for our upcoming webinar series, where experts will share their insights</p>
+        <a href="#" class="btn btn-primary">Register Now</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 32 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/3img.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">"New Ultimate Tutorial Series"</h5>
+        
+        <p class="card-text">We're launching a brand-new tutorial series focused on Python programming.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 55 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/4img.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">"Community Code Review"</h5>
+        <p class="card-text">Submit your code for review and receive valuable feedback from fellow coders.
+           </p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 12 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- -------ch-allenge-------------- -->
+<div class="container mt-4 mb-4"><br>
+  <h2 id="Event2">Upcoming Coding Challenges</h2>
+
+<!-- ----------------EVENT CARDS-------------------- -->
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+<div class="col">
+  <div class="card h-100">
+    <img src="images/pic1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">"JavaScript Challenge: Master the DOM"</h5>
+      <p class="card-text"> Sharpen your JavaScript skills and compete for prizes starting on December 18th, 2023.
+        
+       </p>
+      <a href="#" class="btn btn-primary">Apply Now</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Last updated 10 mins ago</small>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img src="images/pic2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">"Python Challenge: Data Analysis"</h5>
+      <p class="card-text">Calling all Python enthusiasts! Our next coding challenge is for YOU</p>
+      <a href="#" class="btn btn-primary">Register Now</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Last updated 13 mins ago</small>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img src="images/5.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> "Algorithms Marathon: Solve Problems"</h5>
+      
+      <p class="card-text"> Join our algorithms marathon! Test your problem-solving skills.</p>
+      <a href="#" class="btn btn-primary">Upload CV/Resume</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img src="images/pic3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">"Front-End Battle: Build a Responsive Website"</h5>
+      <p class="card-text"> Compete with fellow web developers and win recognition.
+         </p>
+      <a href="#" class="btn btn-primary">Learn More</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Last updated 25 mins ago</small>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+ 
+
+<!-- -------Gallery------ -->
+<div class="container mt-5">
+  <h2 id="Gallery">Gallery</h2>
+  <p class="lead">You can use our best gallery website templates for an assortment of different objectives. Whether you are a freelance designer, photographer, artist, in short, any creative individual who would like to share their masterpieces with the world, these tools are the leading solutions. You can now quickly and effortlessly speed up the process of building an online portfolio and set yourself apart from the competition. Each page canvas ensures flawless performance thanks to Bootstrap Framework and mobile-ready layout. The clean, modern, and eye-catchy design also puts an extra shine on all your designs, creatives, and photographs. If you are ready to take your business or project to another degree, then these are the ideal gallery website templates to choose from.</p>
+
+  <!-- Photo Cards - Page 1 -->
+  <div class="container" >
+    <div class="row"id="sector1">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/gal1.webp" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <!-- <!-- <h5 class="card-title">Image 1</h5> -->
+                    <!-- <p class="card-text">Description for Image 1.</p>  -->
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/gal2.webp" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Image 2</h5>
+                    <p class="card-text">Description for Image 2.</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/gal3.webp" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Image 3</h5>
+                    <p class="card-text">Description for Image 3.</p> -->
+                </div>
+            </div>
+        </div>
+        <!-- You can add more cards following the same structure -->
+    </div>
+</div>
+
+
+
+  <!-- Photo Cards - Page 1 -->
+  <div class="container">
+    <div class="row"id="sector2">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/gal44.webp" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Image 1</h5>
+                    <p class="card-text">Description for Image 1.</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/gallrey4.webp" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Image 2</h5>
+                    <p class="card-text">Description for Image 2.</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/gal8.webp" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Image 3</h5>
+                    <p class="card-text">Description for Image 3.</p> -->
+                </div>
+            </div>
+        </div>
+        <!-- You can add more cards following the same structure -->
+    </div>
+</div>
+  <div class="container">
+    <div class="row"id="sector3">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/gal4.webp" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Image 1</h5>
+                    <p class="card-text">Description for Image 1.</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-6">
+            <div class="card">
+                <img src="images/gal5.webp" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Image 2</h5>
+                    <p class="card-text">Description for Image 2.</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-6">
+            <div class="card">
+                <img src="images/gal6.webp" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                  
+                </div>
+            </div>
+        </div>
+        <!-- You can add more cards following the same structure -->
+    </div>
+</div>
+
+  <!-- Pagination -->
+  <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+              <span class="page-link">&laquo;</span>
+          </li>
+          <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+          </li>
+          <li class="page-item">
+              <a class="page-link" href="#sector1">2</a>
+          </li>
+          <li class="page-item">
+              <a class="page-link" href="#page2">3</a>
+          </li>
+          <!-- Add more page links as needed -->
+          <li class="page-item">
+              <a class="page-link" href="#page2">&raquo;</a>
+          </li>
+      </ul>
+  </nav>
+
+  <!-- Photo Cards - Page 2 (with id "page2") -->
+  
+</div>
+
+
+ <!-- Contact -->
+  <div class="container my-4">
+    <div><h2 id="Contact"><div>
+       Contact Us
+
+    </h2>
+      <form>
+       <div class="mb-3">
+           <label for="exampleFormControlInput1" class="form-label">Email address</label>
+           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+         </div>
+         <label for="exampleFormControlTextarea1" class="form-label">Select your Query</label>
+ <select class="form-select" aria-label="Default select example">
+   
+   <option selected>Web</option>
+   <option value="2">Technology</option>
+   <option value="3">Others</option>
+ </select>
+ <div class ="form-check Required my-4">
+   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required="">
+   <label class="form-check-label" for="flexCheckDefault">
+     Are you a member?
+   </label>
+ </div>
+
+ <div class="mb-3">
+   <label for="exampleFormControlTextarea1" class="form-label" >Explain your Query</label>
+   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+ </div>
+<button type ="submit" class="btn btn-primary">Submit</button>
+</form>
+   </div>
+
+
+
+ 
+  <footer class="container my-4">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2021–2023 CodeJourney, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+  
+ 
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- MDB CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
