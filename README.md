@@ -1,2 +1,1 @@
-# codingblogwebsite
-a coding blog fully responsive website
+https://humairwalait.github.io/codingblogwebsite/
